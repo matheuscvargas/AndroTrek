@@ -1,0 +1,200 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:keepScreenOn="true" 
+    tools:context=".DisplayEnduro">
+    
+	<ScrollView 
+	    android:id="@+id/scrollView1" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="50dp" 
+	    android:layout_alignParentLeft="true" 
+	    android:layout_alignParentTop="true">
+	    
+		<TextView 
+		    android:id="@+enduro/RefsAnteriores" 
+		    android:layout_width="match_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/lbl_lstCalculos"/>
+		
+	</ScrollView>
+	
+	<TextView 
+	    android:id="@+enduro/RefAtualTempo" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true" 
+	    android:layout_below="@+enduro/RefAtual" 
+	    android:text="@string/lbl_txtFimTrecho" 
+	    android:textAppearance="?android:attr/textAppearanceMedium"/>
+	
+	<TextView 
+	    android:id="@+enduro/txtPassos" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignBottom="@+id/textView10" 
+	    android:layout_alignLeft="@+enduro/txtDistAcumul" 
+	    android:text="@string/lbl_txtPassosApres" 
+	    android:textAppearance="?android:attr/textAppearanceLarge"/>
+	
+	<TextView 
+	    android:id="@+id/textView8" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true" 
+	    android:layout_below="@+id/textView6" 
+	    android:layout_marginTop="14dp" 
+	    android:text="@string/lbl_txtDistAcu" 
+	    android:textAppearance="?android:attr/textAppearanceMedium"/>
+	
+	<TextView 
+	    android:id="@+id/textView10" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true" 
+	    android:layout_below="@+id/textView8" 
+	    android:layout_marginTop="14dp" 
+	    android:text="@string/lbl_txtPassos" 
+	    android:textAppearance="?android:attr/textAppearanceMedium"/>
+	
+	<TextView 
+	    android:id="@+id/textView12" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true" 
+	    android:layout_below="@+id/textView10" 
+	    android:layout_marginTop="14dp" 
+	    android:text="@string/lbl_txtTempo" 
+	    android:textAppearance="?android:attr/textAppearanceMedium"/>
+	
+	<TextView 
+	    android:id="@+enduro/txtDistAcumul" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_above="@+id/textView10" 
+	    android:layout_alignLeft="@+enduro/txtDist" 
+	    android:text="@string/lbl_txtDistApres" 
+	    android:textAppearance="?android:attr/textAppearanceLarge"/>
+	
+	<TextView 
+	    android:id="@+enduro/txtDist" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignBottom="@+id/textView6" 
+	    android:layout_marginLeft="16dp" 
+	    android:layout_toRightOf="@+id/textView8" 
+	    android:text="@string/lbl_txtDistApres" 
+	    android:textAppearance="?android:attr/textAppearanceLarge"/>
+	
+	<Button 
+	    android:id="@+enduro/btnSetDist" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignBaseline="@+enduro/btnSetVeloc" 
+	    android:layout_alignBottom="@+enduro/btnSetVeloc" 
+	    android:layout_toLeftOf="@+enduro/btnSetTemp" 
+	    android:text="@string/lbl_btnDist" 
+	    android:onClick="abreDiagDist"
+	    android:width="80dp"/>
+	
+	<TextView 
+	    android:id="@+enduro/txtTempoFim" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignBaseline="@+id/textView12" 
+	    android:layout_alignBottom="@+id/textView12" 
+	    android:layout_alignLeft="@+enduro/txtPassos" 
+	    android:text="@string/lbl_txtTempoFim" 
+	    android:textAppearance="?android:attr/textAppearanceLarge"/>
+	
+	<Button 
+	    android:id="@+enduro/btnSetVeloc" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_below="@+enduro/txtTempoFim" 
+	    android:layout_toLeftOf="@+enduro/btnSetDist" 
+	    android:text="@string/lbl_btnVeloc" 
+	    android:width="80dp"/>
+	
+	<Button 
+	    android:id="@+id/button1" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentRight="true" 
+	    android:layout_alignTop="@+id/textView6" 
+	    android:height="90dp" 
+	    android:text="@string/lbl_txtPC" 
+	    android:width="90dp"/>
+	
+	<TextView 
+	    android:id="@+enduro/lblSetar" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignBottom="@+enduro/btnSetVeloc" 
+	    android:layout_toLeftOf="@+enduro/btnSetVeloc" 
+	    android:text="@string/lbl_txtSetar"/>
+
+	<TextView 
+	    android:id="@+enduro/RefAtual" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true" 
+	    android:layout_below="@+id/scrollView1" 
+	    android:text="@string/lbl_txtRefAtual" 
+	    android:textAppearance="?android:attr/textAppearanceMedium"/>
+	
+	<TextView 
+	    android:id="@+id/TextView02" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="2dp" 
+	    android:layout_alignParentLeft="true" 
+	    android:layout_below="@+enduro/HoraAtual" />
+	
+	<TextView 
+	    android:id="@+enduro/HoraAtual" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentRight="true" 
+	    android:layout_alignTop="@+enduro/RefAtualTempo" 
+	    android:text="@string/lbl_txtTempoFim" 
+	    android:textAppearance="?android:attr/textAppearanceLarge" 
+	    android:textSize="30sp"/>
+	
+	<TextView 
+	    android:id="@+id/textView6" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true" 
+	    android:layout_below="@+id/TextView02" 
+	    android:layout_marginTop="17dp" 
+	    android:text="@string/lbl_txtDist" 
+	    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+	<Button
+	    android:id="@+enduro/btnSetTemp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/button1"
+	    android:layout_below="@+id/textView12"
+	    android:text="@string/lbl_btnTemp"
+	    android:width="80dp" />
+
+	<ScrollView
+	    android:id="@+id/scrollView2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+enduro/btnSetDist" >
+
+	    <TextView
+	        android:id="@+enduro/RefsPosteriores"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lbl_lstCalculos" />
+	</ScrollView>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Principal" >
+
+    <Button
+        android:id="@+id/btnConfig"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/lbl_btnConfig"
+        android:onClick="abreConfig" />
+
+    <Button
+        android:id="@+id/btnLancPlan"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/lbl_btnLancPlan"
+        android:onClick="abreLancPlan" />
+
+    <Button
+        android:id="@+id/btnAlteraPlan"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/lbl_btnAlteraPlanilha"
+        android:onClick="abreAlteraPlan" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="abreCalc"
+        android:text="@string/lbl_btnCalc" />
+
+    <Button
+        android:id="@+id/btnEnduro"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="abreEnduro"
+        android:text="@string/lbl_btnEnduro" />
+
+</LinearLayout>

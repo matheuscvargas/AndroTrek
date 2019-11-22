@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroTrek</string>
+    <string name="menu_settings">Settings</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="pref_sync">Check</string>
+    <string name="pref_sync_summ">pref_sync_summ</string>
+    <string name="descricao">Clique para expandir</string>
+    
+    <string name="title_activity_display_config">Configurações</string>
+    <string name="title_activity_display_lanc_plan">Lançar Planilhas</string>
+    <string name="title_activity_display_calc">Cálculos</string>
+    <string name="title_activity_display_enduro">Enduro</string>
+    <string name="title_activity_display_altera_plan">Altera Planilha</string>
+    <string name="title_activity_diag_dist">Entra Distância</string>
+    <string name="title_activity_display_enviar_plan">DisplayEnviarPlanilha</string>
+    <string name="title_activity_display_recebe_plan">DisplayRecebePlan</string>
+    <string name="title_activity_display_conectado">DisplayConectado</string>
+
+    <string name="lbl_passo">Passo:</string>
+    <string name="lbl_HorAjust">Horário ajustado</string>
+    <string name="lbl_Ajuste">Ajuste:</string>
+    <string name="txtHorAjust">xx:xx:xx</string>
+        
+    <string name="lbl_btnConfig">Configuração</string>
+    <string name="lbl_btnLancPlan">Lançar Planilha</string>
+    <string name="lbl_btnCalc">Cálculos</string>
+    <string name="lbl_btnEnduro">Enduro</string>
+    <string name="lbl_btnAlteraPlanilha">Alterar Planilha</string>
+    <string name="lbl_btnMenos">-</string>
+    <string name="lbl_btnMais">+</string>
+    <string name="lbl_btnVeloc">Veloc</string>
+    <string name="lbl_btnDist">Dist</string>
+    <string name="lbl_btnDot">.</string>
+    <string name="lbl_btn1">1</string>
+    <string name="lbl_btn2">2</string>
+    <string name="lbl_btn3">3</string>
+    <string name="lbl_btn4">4</string>
+    <string name="lbl_btn5">5</string>
+    <string name="lbl_btn6">6</string>
+    <string name="lbl_btn7">7</string>
+    <string name="lbl_btn8">8</string>
+    <string name="lbl_btn9">9</string>
+    <string name="lbl_btn0">0</string>
+    <string name="lbl_btnCE">CE</string>
+    <string name="lbl_btnTemp">Temp</string>
+    <string name="lbl_btnTudo">Tudo</string>
+    <string name="lbl_btnUltimo">Última</string>
+    <string name="lbl_btnOmitir">Omitir</string>
+    <string name="lbl_btnAtualiza">Atualizar</string>
+    <string name="lbl_btnMenos10">-10</string>
+    <string name="lbl_btnMais10">+10</string>
+    <string name="lbl_btnOK">OK</string>
+    <string name="lbl_btnApaga">Apaga</string>
+    <string name="lbl_btnInsereMetragem">Metragem</string>
+    <string name="lbl_btnInsereNeutro">Neutro</string>
+    <string name="lbl_btnConfirma">Confirma</string>
+    <string name="lbl_btnCancela">Cancela</string>
+    <string name="lbl_btnIniciarEnvio">Enviar</string>
+    <string name="lbl_btnEnviarPlan">Enviar Plan</string>
+    <string name="lbl_btnReceberPlan">Receber Plan</string>
+    
+    <string name="lbl_lstCalculos">T000 V000 D0000 T00:00:00 P000.00</string>
+    <string name="lbl_lstCalculosSemPassos">T000 V000 D0000 T00:00:00</string>
+    
+    <string name="lbl_chkVelocMuda">Veloc. muda no trecho</string>
+    <string name="lbl_chkNeutroTrecho">Neutro é trecho?</string>
+    <string name="lbl_chkNovoTrecho">Novo trecho</string>
+    
+    <string name="lbl_txtDistAcumul">Dist. Acumul.:</string>
+    <string name="lbl_txtVeloc">Velocidade:</string>
+    <string name="lbl_txtBlank">.....</string>
+    <string name="lbl_txtTrecho">Trecho:</string>
+    <string name="lbl_txtApagar">Apagar</string>
+    <string name="lbl_txtPasso">100</string>
+    <string name="lbl_txtHoraLargada">Horário de Largada</string>
+    <string name="lbl_txtFimTrecho">Fim trecho: 00:00:00</string>
+    <string name="lbl_txtPassosApres">000.00</string>
+    <string name="lbl_txtDistAcu">Dist. Acu.:</string>
+    <string name="lbl_txtPassos">Passos:</string>
+    <string name="lbl_txtTempo">Tempo:</string>
+    <string name="lbl_txtRefAtual">T000 V000 D0000 P000.00</string>
+    <string name="lbl_txtDistApres">0000.00</string>
+    <string name="lbl_txtTempoFim">00:00:00</string>
+    <string name="lbl_txtSetar">Setar:</string>
+    <string name="lbl_txtPC">PC</string>
+    <string name="lbl_txtDist">Dist.:</string>
+    <string name="lbl_txtDistancia">Distância:</string>
+    <string name="lbl_txtNeutro">Neutro:</string>
+    <string name="lbl_txtInsereApos">Inserir após:</string>
+    <string name="lbl_txtInsereTrecho">Inserir trecho:</string>
+    <string name="lbl_txtRefNum">Ref #</string>
+    <string name="lbl_txtTr">Tr.</string>
+    <string name="lbl_txtVel">Vel.</string>
+    <string name="lbl_txtDis">Dis.</string>
+    <string name="lbl_txtNeut">Neut.</string>
+    <string name="lbl_txtEntreTexto">Entre com o texto</string>
+</resources>

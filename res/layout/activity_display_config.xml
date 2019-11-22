@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayConfig" >
+
+    <TextView
+        android:id="@+config/lblPasso"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/lbl_passo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+config/txtPasso"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+config/lblPasso"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+config/lblPasso"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/lbl_txtPasso"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+config/txtAjuste"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+config/txtPasso"
+        android:layout_alignTop="@+config/btnMenos"
+        android:layout_toRightOf="@+config/btnMenos"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+config/btnMais"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+config/txtAjuste"
+        android:layout_alignBottom="@+config/txtAjuste"
+        android:layout_toRightOf="@+config/txtAjuste"
+        android:text="@string/lbl_btnMais" />
+
+    <Button
+        android:id="@+config/btnMenos"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+config/lblAjuste"
+        android:layout_toRightOf="@+config/lblAjuste"
+        android:text="@string/lbl_btnMenos" />
+
+    <TextView
+        android:id="@+config/lblAjuste"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+config/txtHorAjust"
+        android:layout_below="@+config/txtHorAjust"
+        android:text="@string/lbl_Ajuste"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+config/txtMinutos"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+config/btnMaisMinutos"
+        android:layout_alignRight="@+config/btnMaisMinutos"
+        android:layout_below="@+config/btnMaisMinutos"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+config/btnMaisMinutos"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+config/btnMaisHoras"
+        android:text="@string/lbl_btnMais" />
+
+    <Button
+        android:id="@+config/btnMaisSegundos"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+config/btnMaisMinutos"
+        android:text="@string/lbl_btnMais" />
+
+    <EditText
+        android:id="@+config/txtHoras"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+config/btnMenosHoras"
+        android:layout_below="@+config/btnMaisHoras"
+        android:layout_toLeftOf="@+config/txtMinutos"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+config/txtSegundos"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+config/btnMenosSegundos"
+        android:layout_below="@+config/btnMaisMinutos"
+        android:layout_toRightOf="@+config/txtMinutos"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+config/btnMenosSegundos"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+config/btnMaisSegundos"
+        android:layout_below="@+config/txtSegundos"
+        android:text="@string/lbl_btnMenos" />
+
+    <Button
+        android:id="@+config/btnMenosHoras"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+config/txtMinutos"
+        android:layout_toLeftOf="@+config/txtMinutos"
+        android:text="@string/lbl_btnMenos" />
+
+    <Button
+        android:id="@+config/btnMenosMinutos"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+config/txtMinutos"
+        android:layout_below="@+config/txtMinutos"
+        android:text="@string/lbl_btnMenos" />
+
+    <TextView
+        android:id="@+config/txtHorAjust"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+config/lblHorAjust"
+        android:text="@string/txtHorAjust"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+config/lblHorAjust"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+config/btnMais"
+        android:text="@string/lbl_txtHoraLargada"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+config/btnMaisHoras"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+config/txtSegundos"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="@string/lbl_btnMais" />
+
+    <TextView
+        android:id="@+config/lblHorAjust"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+config/lblPasso"
+        android:layout_marginTop="14dp"
+        android:text="@string/lbl_HorAjust"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+
+</RelativeLayout>

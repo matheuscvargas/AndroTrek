@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DisplayCalc" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+calc/lstReferencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_lstCalculos" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+calc/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="53dp"
+        android:layout_toRightOf="@+id/scrollView1"
+        android:text="@string/lbl_btnEnviarPlan" />
+
+    <Button
+        android:id="@+calc/btnReceber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+calc/btnEnviar"
+        android:layout_below="@+calc/btnEnviar"
+        android:text="@string/lbl_btnReceberPlan" />
+
+</RelativeLayout>

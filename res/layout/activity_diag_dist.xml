@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiagDist" >
+
+    <EditText
+        android:id="@+DiagDist/txtDados"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+DiagDist/bMenos"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+DiagDist/bMenos10"
+        android:layout_toRightOf="@+DiagDist/bMenos10"
+        android:text="@string/lbl_btnMenos" />
+
+    <Button
+        android:id="@+DiagDist/bMais"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+DiagDist/bMenos"
+        android:layout_alignBottom="@+DiagDist/bMenos"
+        android:layout_toRightOf="@+DiagDist/bMenos"
+        android:text="@string/lbl_btnMais" />
+
+    <Button
+        android:id="@+DiagDist/bMais10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+DiagDist/bMais"
+        android:layout_toRightOf="@+DiagDist/bMais"
+        android:text="@string/lbl_btnMais10" />
+
+    <Button
+        android:id="@+DiagDist/bOK"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+DiagDist/bMenos"
+        android:layout_toLeftOf="@+DiagDist/bMais"
+        android:text="@string/lbl_btnOK" />
+
+    <Button
+        android:id="@+DiagDist/btnCancela"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+DiagDist/bOK"
+        android:layout_alignBottom="@+DiagDist/bOK"
+        android:layout_alignRight="@+DiagDist/bMais10"
+        android:layout_toRightOf="@+DiagDist/bOK"
+        android:text="@string/lbl_btnCancela" />
+
+    <Button
+        android:id="@+DiagDist/bMenos10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+DiagDist/txtDados"
+        android:text="@string/lbl_btnMenos10" />
+
+</RelativeLayout>
