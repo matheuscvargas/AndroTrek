@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trekking.androtrek"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.trekking.androtrek.Principal"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trekking.androtrek.DisplayConfig"
+            android:label="@string/title_activity_display_config" >
+        </activity>
+        <activity
+            android:name="com.trekking.androtrek.DisplayCalc"
+            android:label="@string/title_activity_display_calc" >
+        </activity>
+        <activity
+            android:name="com.trekking.androtrek.DisplayEnduro"
+            android:label="@string/title_activity_display_enduro" >
+        </activity>
+        <activity
+            android:name="com.trekking.androtrek.DisplayLancPlan"
+            android:label="@string/title_activity_display_lanc_plan" >
+        </activity>
+        <activity
+            android:name="com.trekking.androtrek.DiagDist"
+            android:label="@string/title_activity_diag_dist"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.trekking.androtrek.DisplayAlteraPlan"
+            android:label="@string/title_activity_display_altera_plan" >
+        </activity>
+        <activity
+            android:name="com.trekking.androtrek.BTComm.DisplayEnviarPlan"
+            android:label="@string/title_activity_display_enviar_plan" >
+        </activity>
+        <activity
+            android:name="com.trekking.androtrek.BTComm.DisplayRecebePlan"
+            android:label="@string/title_activity_display_recebe_plan" >
+        </activity>
+        <activity
+            android:name="com.trekking.androtrek.BTComm.DisplayConectado"
+            android:label="@string/title_activity_display_conectado" >
+        </activity>
+    </application>
+
+</manifest>
